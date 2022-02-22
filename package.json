@@ -1,0 +1,39 @@
+{
+  "name": "@oitq/npm-ts-workspace-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ts workspace template",
+  "scripts": {
+    "compile": "npm run compile -workspaces",
+    "alias": "npm run alias -workspaces",
+    "build": "npm run build -workspaces",
+    "pub": "npm run pub -workspaces",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oitq/npm-ts-workspace-template.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "ts",
+    "workspace",
+    "template"
+  ],
+  "author": "凉菜 <admin@liucl.cn>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oitq/npm-ts-workspace-template/issues"
+  },
+  "homepage": "https://github.com/oitq/npm-ts-workspace-template#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "ts-node": "^10.5.0",
+    "ts-node-dev": "^1.1.8",
+    "tsc-alias": "^1.6.1",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.5"
+  }
+}
